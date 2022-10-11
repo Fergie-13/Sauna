@@ -16,6 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from list import views
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('besedka/<int:pk>/', views.BesedkaDetailView.as_view(), name="bes-det"),
+    path('billiard/<int:pk>/', views.BilliardDetailView.as_view(), name="bil-det"),
+    path('pool/<int:pk>/', views.PoolDetailView.as_view(), name="pool-det"),
 ]
