@@ -8,8 +8,10 @@
 {% block body %}
 <h1>{{object.name}}</h1>
 <b>Description:</b> {{ object.description  }}<br>
-<b>Fire:</b> {{ object.fire  }}<br>
+<b><i class="bi bi-fire"></i></b><br>
+{{ object.fire  }}<br>
 <b>Tools:</b> {{ object.tools  }}<br>
 <b>Area:</b> {{ object.area  }}<br>
-<b>Parking:</b> {{ object.parking  }}<br>
+<b><i class="bi bi-car-front"></i></b><br>
+{{ object.parking  }}<br>
 {% endblock body %}
